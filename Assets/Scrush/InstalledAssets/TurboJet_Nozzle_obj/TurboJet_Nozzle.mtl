@@ -1,0 +1,22 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.3 x64 6.3.3.8069
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl TurboJet_Nozzles
+Ka 0.0901961 0.0901961 0.0901961
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 64
+map_Kd TurboJet_Nozzles_diff.JPG
+map_bump TurboJet_Nozzles_bump.JPG
+bump TurboJet_Nozzles_bump.JPG
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

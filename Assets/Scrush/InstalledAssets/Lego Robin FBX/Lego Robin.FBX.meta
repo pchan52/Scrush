@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 1403b168ba25e4927b0aca9fecaa5d34
+timeCreated: 1493435699
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Compass001
+    100002: Left Hand Robin
+    100004: //RootNode
+    100006: Right Hand Robin
+    100008: Robin Body
+    100010: Robin cape
+    100012: Robin Hair
+    100014: Robin Head
+    100016: Robin Left Arm
+    100018: Robin Left Leg
+    100020: Robin Leg bar
+    100022: Robin Leg to body connect
+    100024: Robin Right Arm
+    100026: Robin Right leg
+    100028: Scene Floor
+    100030: Spiderman left top of leg connector002
+    100032: Spiderman right top of leg connector002
+    400000: Compass001
+    400002: Left Hand Robin
+    400004: //RootNode
+    400006: Right Hand Robin
+    400008: Robin Body
+    400010: Robin cape
+    400012: Robin Hair
+    400014: Robin Head
+    400016: Robin Left Arm
+    400018: Robin Left Leg
+    400020: Robin Leg bar
+    400022: Robin Leg to body connect
+    400024: Robin Right Arm
+    400026: Robin Right leg
+    400028: Scene Floor
+    400030: Spiderman left top of leg connector002
+    400032: Spiderman right top of leg connector002
+    2300000: Left Hand Robin
+    2300002: Right Hand Robin
+    2300004: Robin Body
+    2300006: Robin cape
+    2300008: Robin Hair
+    2300010: Robin Head
+    2300012: Robin Left Arm
+    2300014: Robin Left Leg
+    2300016: Robin Leg bar
+    2300018: Robin Leg to body connect
+    2300020: Robin Right Arm
+    2300022: Robin Right leg
+    2300024: Scene Floor
+    2300026: Spiderman left top of leg connector002
+    2300028: Spiderman right top of leg connector002
+    3300000: Left Hand Robin
+    3300002: Right Hand Robin
+    3300004: Robin Body
+    3300006: Robin cape
+    3300008: Robin Hair
+    3300010: Robin Head
+    3300012: Robin Left Arm
+    3300014: Robin Left Leg
+    3300016: Robin Leg bar
+    3300018: Robin Leg to body connect
+    3300020: Robin Right Arm
+    3300022: Robin Right leg
+    3300024: Scene Floor
+    3300026: Spiderman left top of leg connector002
+    3300028: Spiderman right top of leg connector002
+    4300000: Scene Floor
+    4300002: Robin Hair
+    4300004: Robin Left Leg
+    4300006: Robin Leg to body connect
+    4300008: Spiderman right top of leg connector002
+    4300010: Spiderman left top of leg connector002
+    4300012: Robin Leg bar
+    4300014: Robin Right leg
+    4300016: Robin Body
+    4300018: Robin Right Arm
+    4300020: Right Hand Robin
+    4300022: Robin Left Arm
+    4300024: Left Hand Robin
+    4300026: Robin Head
+    4300028: Robin cape
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
