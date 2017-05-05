@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 
 public class Damage : MonoBehaviour {
-	int _value { get; set; }
+	float _value;
 
-	Damage (int value)
+	public float Value { get; set; }
+
+	Damage (float value)
 	{
 		_value = value;
 	}
