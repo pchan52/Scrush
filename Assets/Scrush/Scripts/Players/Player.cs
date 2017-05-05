@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using GameManagers;
 
 namespace Player {
 	public class Player : MonoBehaviour, IDamageable, IDieable
@@ -24,7 +25,7 @@ namespace Player {
 		public void Die ()
 		{
 			_playerParameters.Hp = _playerParameters.MaxHp;
-			// transform.position =
+			// PlayerSpawner.instance.Respawn();
 		}
 	}
 }
