@@ -2,5 +2,5 @@
 
 public interface IDamageable
 {
-	void ApplyDamage();
+	void ApplyDamage(Damage damage);
 }
