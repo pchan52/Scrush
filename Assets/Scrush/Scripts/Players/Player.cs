@@ -1,13 +1,22 @@
 ﻿using UnityEngine;
 using GameManagers;
+using Damages;
 
-namespace Player {
-	public class Player : MonoBehaviour, IDamageable, IDieable
+namespace Players {
+	public class Player : MonoBehaviour, IDamageApplicable, IDieable
 	{
+		[SerializeField] private float _maxHp;
+		private PlayerStatus _playerStatus;
 		private PlayerParameters _playerParameters;
+
+		public PlayerStatus PlayerStatus
+		{
+			get { return _playerStatus; }
+		}
+
 		void Start ()
 		{
-			_playerParameters = new PlayerParameters();
+			_playerParameters = new PlayerParameters(_maxHp);
 		}
 
 		void Update ()
@@ -22,10 +31,11 @@ namespace Player {
 		{
 			_playerParameters.Hp -= damage.Value;
 		}
+
 		public void Die ()
 		{
-			_playerParameters.Hp = _playerParameters.MaxHp;
-			// PlayerSpawner.instance.Respawn();
+			_playerParameters.Hp = _maxHp;
+			PlayerSpawner.instance.Respawn(gameObject);
 		}
 	}
 }

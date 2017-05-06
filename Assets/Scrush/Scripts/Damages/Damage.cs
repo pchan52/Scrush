@@ -1,12 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using Attacks;
 
-public class Damage : MonoBehaviour {
-	float _value;
-
-	public float Value { get; set; }
-
-	Damage (float value)
-	{
-		_value = value;
+namespace Damages
+{
+	public struct Damage {
+		public PlayerAttacker Attacker { get; set; }
+		public float Value { get; set; }
 	}
 }

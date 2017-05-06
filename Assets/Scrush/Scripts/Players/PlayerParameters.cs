@@ -1,15 +1,17 @@
-﻿namespace Player
+﻿namespace Players
 {
+	public enum PlayerStatus
+    {
+		Hero,
+		Villain
+    }
 	public class PlayerParameters {
 		private float _hp;
-		private float _maxHp = 100f;
-
 		public float Hp { get; set; }
-		public float MaxHp { get; }
 
-		public PlayerParameters ()
+		public PlayerParameters (float maxHp)
 		{
-			_hp = _maxHp;
+			_hp = maxHp;
 		}
 
 	}

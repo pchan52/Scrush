@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
-public interface IDieable
-{
-	void Die();
+namespace Damages {
+	public interface IDieable
+	{
+		void Die();
+	}
 }
