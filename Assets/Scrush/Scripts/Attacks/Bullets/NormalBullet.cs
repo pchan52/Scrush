@@ -17,7 +17,7 @@ namespace Attacks.Bullets {
 		}
 
 		// 引数playerStatusを渡すと味方だとtrue、敵だとfalseを返す
-		bool IsFriend(PlayerStatus playerStatus)
+		private bool IsFriend(PlayerStatus playerStatus)
 		{
 			return this.Attacker.PlayerStatus == playerStatus;
 		}
@@ -38,6 +38,7 @@ namespace Attacks.Bullets {
 					{
 						// Damageを与える
 						damageApplicable.ApplyDamage(GiveDamage());
+						EffectManager.instance.Damaged(player);
 					}
 				}
 				Object.Destroy(gameObject);

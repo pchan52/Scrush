@@ -34,6 +34,7 @@ namespace Players {
 
 		public void Die ()
 		{
+			EffectManager.instance.Dead(this);
 			_playerParameters.Hp = _maxHp;
 			PlayerSpawner.instance.Respawn(gameObject);
 		}
