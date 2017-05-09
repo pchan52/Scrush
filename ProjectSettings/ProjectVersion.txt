@@ -1,7 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_EditorVersion: 5.6.0f3
+=======
+m_EditorVersion: 5.5.2f1
+>>>>>>> parent of 136c071... version changed(5.6.0f3)
 =======
 m_EditorVersion: 5.5.2f1
 >>>>>>> parent of 136c071... version changed(5.6.0f3)
