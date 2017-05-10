@@ -1,1 +1,21 @@
+<<<<<<< HEAD
 m_EditorVersion: 5.6.0f3
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+m_EditorVersion: 5.6.0f3
+=======
+m_EditorVersion: 5.5.2f1
+>>>>>>> parent of 136c071... version changed(5.6.0f3)
+=======
+m_EditorVersion: 5.5.2f1
+>>>>>>> parent of 136c071... version changed(5.6.0f3)
+=======
+m_EditorVersion: 5.5.2f1
+>>>>>>> parent of 136c071... version changed(5.6.0f3)
+=======
+m_EditorVersion: 5.5.2f1
+>>>>>>> parent of 136c071... version changed(5.6.0f3)
+>>>>>>> f74dda2a4b72eaede26c79266927f3a7fa598a19
