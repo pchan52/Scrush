@@ -25,6 +25,11 @@ public class SteamVR_LaserPointer : MonoBehaviour
     public Transform reference;
     public event PointerEventHandler PointerIn;
     public event PointerEventHandler PointerOut;
+    SteamVR_TrackedObject trackedObject;
+    public GameObject normalSkills;
+    public GameObject MasterSkills;
+    public GameObject Origin;
+
 
     Transform previousContact = null;
 
@@ -33,15 +38,17 @@ public class SteamVR_LaserPointer : MonoBehaviour
     {
         holder = new GameObject();
         holder.transform.parent = this.transform;
-        holder.transform.localPosition = Vector3.zero;
-		holder.transform.localRotation = Quaternion.identity;
+        holder.transform.localPosition = new Vector3(-4,0,0);
+		holder.transform.localRotation = Quaternion.Euler(0, 180, 0);
 
-		pointer = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        pointer = GameObject.CreatePrimitive(PrimitiveType.Cube);
         pointer.transform.parent = holder.transform;
         pointer.transform.localScale = new Vector3(thickness, thickness, 100f);
         pointer.transform.localPosition = new Vector3(0f, 0f, 50f);
 		pointer.transform.localRotation = Quaternion.identity;
 		BoxCollider collider = pointer.GetComponent<BoxCollider>();
+        trackedObject = GetComponent<SteamVR_TrackedObject>();
+
         if (addRigidBody)
         {
             if (collider)
@@ -89,7 +96,7 @@ public class SteamVR_LaserPointer : MonoBehaviour
 
         SteamVR_TrackedController controller = GetComponent<SteamVR_TrackedController>();
 
-        Ray raycast = new Ray(transform.position, transform.forward);
+        Ray raycast = new Ray(transform.position, -transform.forward);
         RaycastHit hit;
         bool bHit = Physics.Raycast(raycast, out hit);
 
@@ -137,5 +144,24 @@ public class SteamVR_LaserPointer : MonoBehaviour
             pointer.transform.localScale = new Vector3(thickness, thickness, dist);
         }
         pointer.transform.localPosition = new Vector3(0f, 0f, dist/2f);
+
+
+        var device = SteamVR_Controller.Input((int)trackedObject.index);
+
+
+        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
+        {
+            print("トリガーを深く引いた" + device);
+            GameObject NormalSkills = Instantiate(normalSkills,Origin.transform.position, Origin.transform.rotation) as GameObject;
+            NormalSkills.transform.parent = Origin.transform;
+        }
+        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Grip))
+        {
+            Debug.Log("グリップボタンをクリックした");
+            GameObject NormalSkills = Instantiate(MasterSkills, Origin.transform.position, Origin.transform.rotation) as GameObject;
+            NormalSkills.transform.parent = Origin.transform;
+        }
+
     }
 }
+
